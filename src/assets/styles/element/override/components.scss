@@ -1,0 +1,81 @@
+// 按钮样式覆盖
+.el-button {
+  &--primary {
+    &:hover, &:focus {
+      background-color: lighten($--color-primary, 10%);
+      border-color: lighten($--color-primary, 10%);
+    }
+  }
+}
+
+// 表格样式覆盖
+.el-table {
+  th.el-table__cell {
+    background-color: #f5f7fa;
+    font-weight: 600;
+  }
+  
+  .el-table__row {
+    &:hover {
+      background-color: #ecf5ff;
+    }
+  }
+}
+
+// 分页样式覆盖
+.el-pagination {
+  margin-top: 20px;
+  padding: 0;
+}
+
+// 表单样式覆盖
+.el-form {
+  &-item__label {
+    font-weight: 500;
+  }
+}
+
+// 卡片样式覆盖
+.el-card {
+  border-radius: 6px;
+  border: none;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  
+  .el-card__header {
+    padding: 15px 20px;
+    border-bottom: 1px solid #ebeef5;
+    font-weight: 500;
+  }
+  
+  .el-card__body {
+    padding: 20px;
+  }
+}
+
+// 对话框样式覆盖
+.el-dialog {
+  border-radius: 6px;
+  
+  .el-dialog__header {
+    padding: 15px 20px;
+    border-bottom: 1px solid #ebeef5;
+  }
+  
+  .el-dialog__title {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .el-dialog__headerbtn {
+    top: 15px;
+  }
+  
+  .el-dialog__body {
+    padding: 20px;
+  }
+  
+  .el-dialog__footer {
+    padding: 15px 20px;
+    border-top: 1px solid #ebeef5;
+  }
+}

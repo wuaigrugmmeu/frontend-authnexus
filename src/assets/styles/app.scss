@@ -1,0 +1,108 @@
+@import './element/variables.scss';
+@import './theme.scss';
+
+// 全局样式定义
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+  font-size: $--font-size-base;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+  height: 100%;
+}
+
+// 通用布局类
+.full-height {
+  height: 100%;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-container {
+  padding: 20px;
+}
+
+// 表格相关
+.table-container {
+  margin-top: 15px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+
+  .table-header {
+    padding: 15px 20px;
+    border-bottom: 1px solid #ebeef5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header-title {
+      font-size: 16px;
+      font-weight: 500;
+      color: #333;
+    }
+  }
+
+  .table-filter {
+    padding: 15px 20px;
+    background-color: #fafafa;
+  }
+
+  .el-table {
+    width: 100%;
+  }
+
+  .table-pagination {
+    padding: 15px 20px;
+    text-align: right;
+  }
+}
+
+// 表单相关
+.form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+
+  .form-header {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+  }
+
+  .el-form-item {
+    margin-bottom: 20px;
+  }
+
+  .form-actions {
+    margin-top: 30px;
+    text-align: right;
+  }
+}
+
+// 卡片样式
+.card {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}

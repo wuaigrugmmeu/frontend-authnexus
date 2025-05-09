@@ -1,0 +1,120 @@
+/* 全局主题相关样式 */
+
+:root {
+  /* 浅色主题变量 */
+  --primary-color: #409EFF;
+  --bg-color: #ffffff;
+  --bg-color-page: #f5f7fa;
+  --text-color: #303133;
+  --text-color-secondary: #606266;
+  --border-color: #E4E7ED;
+  --border-color-light: #F2F6FC;
+  --box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s;
+}
+
+html.dark {
+  /* 深色主题变量 */
+  --primary-color: #5ca8ff;
+  --bg-color: #1e1e1e;
+  --bg-color-page: #121212;
+  --text-color: #E0E0E0;
+  --text-color-secondary: #A0A0A0;
+  --border-color: #4D4D4D;
+  --border-color-light: #383838;
+  --box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* 基础样式覆盖 */
+body {
+  color: var(--text-color);
+  background-color: var(--bg-color-page);
+  transition: var(--transition);
+}
+
+/* Element Plus 主题覆盖 */
+:root {
+  --el-color-primary: var(--primary-color);
+  --el-text-color-primary: var(--text-color);
+  --el-text-color-secondary: var(--text-color-secondary);
+  --el-border-color: var(--border-color);
+  --el-border-color-light: var(--border-color-light);
+  --el-bg-color: var(--bg-color);
+  --el-bg-color-page: var(--bg-color-page);
+  --el-box-shadow: var(--box-shadow);
+}
+
+/* 卡片样式 */
+.app-card {
+  background-color: var(--bg-color);
+  border-radius: 4px;
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: var(--transition);
+}
+
+/* 表格样式 */
+.app-table {
+  width: 100%;
+  background-color: var(--bg-color);
+  
+  &.el-table {
+    --el-table-border-color: var(--border-color);
+    --el-table-header-bg-color: var(--bg-color-page);
+    --el-table-row-hover-bg-color: var(--bg-color-page);
+  }
+}
+
+/* 表单样式 */
+.app-form {
+  .el-input__inner,
+  .el-textarea__inner {
+    background-color: var(--bg-color);
+    border-color: var(--border-color);
+    color: var(--text-color);
+  }
+}
+
+/* 按钮样式 */
+.app-button {
+  transition: var(--transition);
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+  .app-card {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .el-form-item {
+    margin-bottom: 15px;
+  }
+  
+  .el-dialog {
+    width: 90% !important;
+  }
+}
+
+/* 过渡动画 */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.slide-fade-enter-active,
+.slide-fade-leave-active {
+  transition: all 0.3s ease;
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateX(20px);
+  opacity: 0;
+}

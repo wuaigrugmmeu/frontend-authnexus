@@ -1,0 +1,27 @@
+// Element Plus 变量覆盖
+// 这里可以自定义 Element Plus 的主题变量
+
+// 主色调
+$--color-primary: #409eff;
+$--color-success: #67c23a;
+$--color-warning: #e6a23c;
+$--color-danger: #f56c6c;
+$--color-info: #909399;
+
+// 字体相关
+$--font-size-base: 14px;
+$--font-weight-primary: 500;
+
+// 边框相关
+$--border-radius-base: 4px;
+$--border-color-base: #dcdfe6;
+
+// 按钮相关
+$--button-font-weight: 400;
+$--button-padding-vertical: 12px;
+$--button-padding-horizontal: 20px;
+
+// 其他自定义变量
+$--header-height: 60px;
+$--sidebar-width: 240px;
+$--sidebar-collapsed-width: 64px;

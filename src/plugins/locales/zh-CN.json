@@ -1,0 +1,176 @@
+{
+  "app": {
+    "title": "AuthNexus 管理系统",
+    "logout": "退出登录",
+    "profile": "个人中心",
+    "settings": "系统设置"
+  },
+  "menu": {
+    "dashboard": "首页",
+    "iam": "用户权限",
+    "users": "用户管理",
+    "roles": "角色管理",
+    "permissions": "权限管理",
+    "applications": "应用管理",
+    "settings": "系统设置"
+  },
+  "login": {
+    "title": "系统登录",
+    "username": "用户名",
+    "password": "密码",
+    "remember": "记住我",
+    "login": "登录",
+    "forgot": "忘记密码?",
+    "register": "注册账号"
+  },
+  "common": {
+    "search": "搜索",
+    "reset": "重置",
+    "add": "新增",
+    "edit": "编辑",
+    "delete": "删除",
+    "view": "查看",
+    "submit": "提交",
+    "cancel": "取消",
+    "confirm": "确认",
+    "back": "返回",
+    "save": "保存",
+    "operation": "操作",
+    "actions": "操作",
+    "status": {
+      "enabled": "启用",
+      "disabled": "禁用"
+    },
+    "yes": "是",
+    "no": "否"
+  },
+  "user": {
+    "title": "用户管理",
+    "username": "用户名",
+    "name": "姓名",
+    "email": "邮箱",
+    "phone": "手机号",
+    "department": "部门",
+    "status": "状态",
+    "createTime": "创建时间",
+    "lastLoginTime": "最后登录时间",
+    "gender": {
+      "male": "男",
+      "female": "女",
+      "unknown": "未知"
+    },
+    "form": {
+      "addUser": "新增用户",
+      "editUser": "编辑用户",
+      "password": "密码",
+      "confirmPassword": "确认密码",
+      "remark": "备注"
+    },
+    "message": {
+      "deleteConfirm": "确定要删除用户 {username} 吗?",
+      "deleteSuccess": "删除用户成功",
+      "createSuccess": "创建用户成功",
+      "updateSuccess": "更新用户成功"
+    }
+  },
+  "role": {
+    "title": "角色管理",
+    "name": "角色名称",
+    "code": "角色编码",
+    "description": "角色描述",
+    "status": "状态",
+    "createTime": "创建时间",
+    "updateTime": "更新时间",
+    "sortOrder": "排序",
+    "form": {
+      "addRole": "新增角色",
+      "editRole": "编辑角色"
+    },
+    "message": {
+      "deleteConfirm": "确定要删除角色 {name} 吗?",
+      "deleteSuccess": "删除角色成功",
+      "createSuccess": "创建角色成功",
+      "updateSuccess": "更新角色成功"
+    }
+  },
+  "permission": {
+    "title": "权限管理",
+    "name": "权限名称",
+    "code": "权限标识",
+    "type": "权限类型",
+    "menu": "菜单权限",
+    "button": "按钮权限",
+    "api": "接口权限",
+    "path": "菜单路径",
+    "apiPath": "接口路径",
+    "apiMethod": "请求方法",
+    "icon": "图标",
+    "sortOrder": "排序",
+    "status": "状态",
+    "parentId": "上级权限",
+    "remark": "备注",
+    "form": {
+      "addPermission": "新增权限",
+      "editPermission": "编辑权限",
+      "addChild": "添加子权限"
+    },
+    "message": {
+      "deleteConfirm": "确定要删除权限 {name} 吗?",
+      "deleteSuccess": "删除权限成功",
+      "createSuccess": "创建权限成功",
+      "updateSuccess": "更新权限成功",
+      "refreshConfirm": "确定要同步系统权限吗？这将根据代码中的权限注解重新生成权限数据。",
+      "refreshSuccess": "权限同步成功",
+      "hasChildren": "该权限下存在子权限，请先删除子权限"
+    }
+  },
+  "application": {
+    "title": "应用管理",
+    "name": "应用名称",
+    "appId": "应用标识",
+    "redirectUri": "回调地址",
+    "description": "应用描述",
+    "status": "状态",
+    "createTime": "创建时间",
+    "updateTime": "更新时间",
+    "allowedGrantTypes": "授权类型",
+    "accessTokenValidity": "访问令牌有效期",
+    "refreshTokenValidity": "刷新令牌有效期",
+    "grantType": {
+      "authorization_code": "授权码模式",
+      "implicit": "隐式授权模式",
+      "password": "密码模式",
+      "client_credentials": "客户端模式",
+      "refresh_token": "刷新令牌"
+    },
+    "tabs": {
+      "users": "用户授权",
+      "stats": "使用统计",
+      "logs": "访问日志"
+    },
+    "form": {
+      "addApplication": "新增应用",
+      "editApplication": "编辑应用"
+    },
+    "message": {
+      "deleteConfirm": "确定要删除应用 {name} 吗？删除后将无法恢复，相关的授权和配置也将被清除！",
+      "deleteSuccess": "删除应用成功",
+      "createSuccess": "创建应用成功",
+      "updateSuccess": "更新应用成功",
+      "resetSecretConfirm": "确定要重置应用 {name} 的密钥吗？重置后旧密钥将无法使用！",
+      "resetSecretSuccess": "重置密钥成功",
+      "secretWarning": "重要提示：应用密钥仅显示一次，请妥善保存！"
+    }
+  },
+  "error": {
+    "networkError": "网络错误，请检查您的网络连接",
+    "serverError": "服务器错误，请稍后再试",
+    "unauthorized": "未授权，请先登录",
+    "forbidden": "权限不足，无法访问",
+    "notFound": "资源不存在",
+    "unknown": "未知错误",
+    "timeout": "请求超时，请稍后再试",
+    "validationError": "表单验证失败，请检查输入",
+    "loginFailed": "登录失败，用户名或密码错误"
+  }
+}
